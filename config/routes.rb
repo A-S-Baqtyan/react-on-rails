@@ -1,3 +1,20 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get '/signin', to: 'v1/auth/sessions#signin'
+
+  # Views apis
+  # namespace :v1 do
+  #   namespace :auth do
+  #     get 'sessions/create'
+  #     get 'sessions/destroy'
+  #   end
+  # end
+  
+  # Json apis
+  namespace :v1 do
+    namespace :apis do
+      namespace :auth do
+        resource :sessions, only: :create
+      end
+    end
+  end
 end

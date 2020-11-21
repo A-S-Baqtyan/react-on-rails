@@ -1,0 +1,30 @@
+en:
+  errors:
+    # 10XX : Main App Errors
+    '1000': 'App Server Error, please contact the admin' # Global Error
+    '1001': 'Missing Headers'
+    '1002': 'Missing Parameters'
+    '1003': 'Invalid offset or limit'
+    '1004': 'Invalid Locale'
+    '1005': 'Invalid Timezone'
+    '1006': 'You exceeded the limit of requests per minute, Please try again after sometime.'
+    '1007': OTP has been expired
+    '1008': Code dose not work please try again
+
+    # 11XX : Http Errors
+    '1101': 'Unauthorized'
+    '1102': 'Not authorized to access'
+    '1103': 'Unprocessable Entity'
+    '1104': 'Authentication Failed'
+    '1105': 'Not Found'
+    '1106': 'Account not found'
+    '1107': Invalid email
+    '1108': Invalid password
+    '1109': This account has been blocked
+    '1110': Invalid credentials
+
+    # 13XX : Api accessor
+    '1301': 'Only DressUp front end apps can use this api, please contact the admin to get the access'
+  activerecord:
+    errors:
+      messages:

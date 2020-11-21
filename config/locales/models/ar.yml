@@ -1,0 +1,15 @@
+ar:
+  activerecord:
+    models:
+      user:
+        one:   مستخدم
+        other: مستخدمين
+    attributes:
+      user:
+        full_name: الاسم الكامل
+        role: الصلاحية
+        status: الحالة
+        email: البريد الالكتروني
+        mobile: رقم الموبايل
+        password: كلمة المرور
+        country_code: مفتاح البلد
